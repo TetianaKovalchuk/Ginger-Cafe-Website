@@ -1,0 +1,120 @@
+* {
+  transition: 500ms ease;
+  font-family: Jura;
+}
+
+:root {
+  --main: #adfadf;
+  --desktopProportions: 100vw / 1920;
+  --orangeBrownColor: #b99162;
+  --lightBrownColor: #fffbdb;
+  --lightBrownColorDarker: #ecd6b3;
+  --sectionBackgroundColorLight: #fffbdb99;
+  --superLightOrangeBrownColor: #ebd4ba;
+  --lightOrangeBrownColor: #d3b491;
+  --brownOrangeLightColor: #8b6539;
+  /* dark */
+  --brownOrangeDarkColor: #72512b;
+  --brownOrangeDarkDarkColor: #5e3e1b;
+  --orangeDarkColor: #a1794e;
+  --brownDarkColor: #382715;
+  --headerBackgroundColor: #cbb591;
+  --headerBackgroundColorDark: #382715;
+  --sectionBackgroundColorDark: #30211299;
+  --footerBackgroundColor: #00000093;
+  --panelBackgroundColor: white;
+  --panelBorderColor: #00000000;
+  --panelIconsBackgroundColor: #00000000;
+  --panelIconsBackgroundHoverColor: var(--lightBrownColor);
+  --panelIconsBorderColor: var(--lightBrownColor);
+}
+
+body {
+  background-color: var(--orangeBrownColor);
+  position: relative;
+  padding-top: calc(2 * var(--desktopProportions));
+}
+
+/* Main */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Jura;
+  font-size: calc(41 * var(--desktopProportions));
+  font-style: normal;
+  font-weight: 400;
+  line-height: calc(60 * var(--desktopProportions));
+  letter-spacing: 0em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+h1.dark,
+h2.dark,
+h3.dark,
+h4.dark,
+h5.dark,
+h6.dark {
+  color: var(--superLightOrangeBrownColor);
+}
+
+h1:after,
+h2:after,
+h3:after,
+h4:after,
+h5:after,
+h6:after {
+  content: "";
+  background-color: var(--brownOrangeDarkColor);
+  height: calc(1.7 * var(--desktopProportions));
+  display: block;
+  position: absolute;
+  margin-top: calc(9 * var(--desktopProportions));
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+  transition: width 500ms, opacity 500ms ease-out;
+  width: 0;
+}
+
+h1.dark::after,
+h2.dark::after,
+h3.dark::after,
+h4.dark::after,
+h5.dark::after,
+h6.dark::after {
+  background-color: var(--lightBrownColor);
+}
+
+h1:hover::after,
+h2:hover::after,
+h3:hover::after,
+h4:hover::after,
+h5:hover::after,
+h6:hover::after {
+  opacity: 1;
+  width: calc(690 * var(--desktopProportions));
+  transition: width 500ms ease-in;
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(1200 * var(--desktopProportions));
+}
+
+.after-section-line {
+  background-color: var(--orangeBrownColor);
+  height: calc(2 * var(--desktopProportions));
+  width: 100%;
+}

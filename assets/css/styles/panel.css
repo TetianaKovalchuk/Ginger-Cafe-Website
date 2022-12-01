@@ -1,0 +1,38 @@
+.panel {
+  background-color: var(--panelBackgroundColor);
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  bottom: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-height: fit-content;
+  padding: calc(6 * var(--desktopProportions));
+  border: 1px var(--panelBorderColor) solid;
+}
+
+.panel-theme {
+}
+
+.panel-theme-toggle {
+}
+
+.panel-icon {
+  width: calc(45 * var(--desktopProportions));
+  height: calc(45 * var(--desktopProportions));
+  border: var(--panelIconsBorderColor) 1px solid;
+  box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 15%);
+  transition: 500ms background-color ease;
+  padding: calc(2 * var(--desktopProportions));
+  cursor: pointer;
+  background-color: var(--panelIconsBackgroundColor);
+}
+
+.panel-icon:not(:last-child) {
+  margin-bottom: calc(10 * var(--desktopProportions));
+}
+
+.panel-icon:hover {
+  background-color: var(--panelIconsBackgroundHoverColor);
+  transition: 500ms background-color ease;
+}

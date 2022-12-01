@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+
+    <link rel="stylesheet" href="assets/css/styles/root.css" />
+    <link rel="stylesheet" href="assets/css/styles/header.css" />
+    <link rel="stylesheet" href="assets/css/styles/panel.css" />
+    <link rel="stylesheet" href="assets/css/styles/section1.css" />
+    <link rel="stylesheet" href="assets/css/styles/section1-cards.css" />
+    <link rel="stylesheet" href="assets/css/styles/section2.css" />
+    <link rel="stylesheet" href="assets/css/styles/section3.css" />
+    <link rel="stylesheet" href="assets/css/styles/section4.css" />
+    <link rel="stylesheet" href="assets/css/styles/section5.css" />
+    <link rel="stylesheet" href="assets/css/styles/section8.css" />
+    <link rel="stylesheet" href="assets/css/styles/footer.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Имбирь</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <img
+          src="assets/img/header/logo-light.png"
+          alt="Logo"
+          class="header-logo"
+        />
+        <nav class="header-nav">
+          <a href="#section1">
+            <img
+              src="assets/img/header/home.svg"
+              alt="Home"
+              class="header-nav-home"
+            />
+          </a>
+          <ul class="header-nav-pages">
+            <li class="header-nav-pages-item">
+              <a href="#section2" class="header-nav-pages-item-link">Меню</a>
+            </li>
+            <li class="header-nav-pages-item">
+              <a href="#section3" class="header-nav-pages-item-link"
+                >Бизнес-ланчи</a
+              >
+            </li>
+            <!-- <li class="header-nav-pages-item">
+                  <a href="#" class="header-nav-pages-item-link">Я тоже смогу!</a>
+               </li> -->
+            <li class="header-nav-pages-item">
+              <a href="#section4" class="header-nav-pages-item-link"
+                >На заказ</a
+              >
+            </li>
+            <li class="header-nav-pages-item">
+              <a href="#" class="header-nav-pages-item-link">Пространство</a>
+            </li>
+            <li class="header-nav-pages-item">
+              <a href="#footer" class="header-nav-pages-item-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <img
+          src="assets/img/header/search-light.svg"
+          alt="Search"
+          class="header-search"
+        />
+      </div>
+    </header>
+    <input type="text" placeholder="Ищем..." class="header-field" />
+    <script src="assets/js/search.js"></script>
+    <div class="panel">
+      <div class="panel-theme">
+        <img
+          alt="Toggle Dark/Light theme"
+          class="panel-theme-toggle panel-icon"
+          src="assets/img/panel/toggle.svg"
+        />
+        <img
+          alt="Auto Dark/Light theme"
+          class="panel-theme-auto panel-icon"
+          src="assets/img/panel/auto.svg"
+        />
+      </div>
+    </div>
+    <main>
+      <section class="main-section1" id="section1">
+        <h1 class="main-section1-header">
+          Литературное кафе «Имбирь» с вегетарианской кухней
+        </h1>
+        <div class="main-section1-img">
+          <div class="main-section1-img-wrapper">
+            <div class="options">
+              <div
+                class="option active"
+                style="--optionBackground: url(/assets/img/section1/1.png)"
+              >
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="icon">
+                    <img
+                      src="/assets/img/section1/1-icon.svg"
+                      alt=""
+                      style="width: calc(30 * var(--desktopProportions))"
+                    />
+                  </div>
+                  <div class="info">
+                    <div class="main">Подача блюд</div>
+                    <div class="sub">Идеальная подача.</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="option"
+                style="--optionBackground: url(/assets/img/section1/2.png)"
+              >
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="icon">
+                    <img
+                      src="/assets/img/section1/2-icon.svg"
+                      alt=""
+                      style="
+                        width: calc(33 * var(--desktopProportions));
+                        margin-top: calc(-5 * var(--desktopProportions));
+                      "
+                    />
+                  </div>
+                  <div class="info">
+                    <div class="main">Помещение</div>
+                    <div class="sub">Атмосферный декор.</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="option"
+                style="--optionBackground: url(/assets/img/section1/3.png)"
+              >
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="icon">
+                    <img
+                      src="/assets/img/section1/3-icon.svg"
+                      alt=""
+                      style="
+                        width: calc(33 * var(--desktopProportions));
+                        margin-top: calc(-5 * var(--desktopProportions));
+                      "
+                    />
+                  </div>
+                  <div class="info">
+                    <div class="main">Торты</div>
+                    <div class="sub">Торты на заказ.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="main-section1-description">
+          <li class="main-section1-description-item">
+            Литературное кафе Имбирь – уютное место в центре Киева, с
+            открытостью пространства и неуловимым ощущением свободы. «Имбирь» –
+            это вегетарианский ресторан, где главенствует здоровая и правильная
+            еда.
+          </li>
+          <li class="main-section1-description-item">
+            Основа меню кафе Имбирь – принципы ведической кулинарии. Мы
+            предлагаем гостям попробовать вегетарианские и веганские рецепты
+            традиционных блюд, сыроедческое меню, познакомиться с ведической
+            кулинарией и узнать, что такое «живая» еда.
+          </li>
+          <li class="main-section1-description-item">
+            Искусство питания человека – это то, что мы пытаемся познать каждый
+            день и то, чем хотим поделиться с другими.
+          </li>
+        </ul>
+      </section>
+      <script>
+        $(".option").click(function () {
+          $(".option").removeClass("active");
+          $(this).addClass("active");
+        });
+      </script>
+      <div class="after-section-line"></div>
+      <script src="assets/js/header logo animation.js"></script>
+      <section class="main-section2" id="section2">
+        <h2 class="main-section2-header">Меню</h2>
+        <div class="main-section2-buttons">
+          <div class="main-section2-buttons-row1">
+            <a
+              href="https://imbir.ua/uploads/menu/ua20.pdf"
+              class="main-section2-buttons-ua"
+              target="_blank"
+            >
+              <button class="main-section2-buttons-item-button">
+                Меню (ua)
+              </button>
+            </a>
+            <a
+              href="https://imbir.ua/uploads/menu/ru20.pdf"
+              class="main-section2-buttons-ru"
+              target="_blank"
+            >
+              <button class="main-section2-buttons-item-button">
+                Меню (ru)
+              </button>
+            </a>
+          </div>
+          <div class="main-section2-buttons-row2">
+            <a
+              href="https://imbir.ua/uploads/menu/en20.pdf"
+              class="main-section2-buttons-eng"
+              target="_blank"
+            >
+              <button class="main-section2-buttons-item-button">
+                Меню (eng)
+              </button>
+            </a>
+            <a
+              href="https://imbir.daeda.kiev.ua/"
+              class="main-section2-buttons-order"
+              target="_blank"
+            >
+              <button class="main-section2-buttons-item-button">
+                Заказ и доставка
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="after-section-line"></div>
+      <section class="section3" id="section3">
+        <div class="container section3-container">
+          <h2 class="section3-header">Бизнес-ланч</h2>
+          <p class="section3-time">по буднях з 12:00 до 16:00</p>
+          <p class="section3-date">
+            Сегодня, //-го //////, у нас на бизнес-ланч:
+          </p>
+          <ul class="section3-dishes">
+            <li>
+              <p class="section3-dishes-item dish1">Блюдо 1</p>
+              <div class="section3-dishinfo">
+                <img
+                  src="assets/img/section3/dish1.jpg"
+                  alt=""
+                  class="section3-dishimg dish1img"
+                />
+                <p class="section3-dishdes">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Recusandae perspiciatis minima, iure labore neque quo magni
+                  magnam sed reprehenderit pariatur!
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="section3-dishes-item dish2">Блюдо 2</p>
+              <div class="section3-dishinfo">
+                <img
+                  src="assets/img/section3/dish2.jpg"
+                  alt=""
+                  class="section3-dishimg dish2img"
+                />
+                <p class="section3-dishdes">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+                  dignissimos perspiciatis quod incidunt quia, aspernatur
+                  recusandae qui commodi modi cumque.
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="section3-dishes-item dish3">Блюдо 3</p>
+              <div class="section3-dishinfo">
+                <img
+                  src="assets/img/section3/dish3.jpg"
+                  alt=""
+                  class="section3-dishimg dish3img"
+                />
+                <p class="section3-dishdes">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Obcaecati aliquid quas ullam similique accusantium quaerat
+                  nemo dignissimos, rerum animi alias.
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="section3-dishes-item dish4">Блюдо 4</p>
+              <div class="section3-dishinfo">
+                <img
+                  src="assets/img/section3/dish4.jpg"
+                  alt=""
+                  class="section3-dishimg dish4img"
+                />
+                <p class="section3-dishdes">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reprehenderit nam inventore eaque tempore, totam eligendi amet
+                  ipsum doloribus placeat sed.
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="section3-extra" style="font-weight: bold">Еще чтото</p>
+              <div class="section3-dishinfo">
+                <img
+                  src="assets/img/section3/dish5.jpg"
+                  alt=""
+                  class="section3-dishimg dish5img"
+                />
+                <p class="section3-dishdes">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus velit debitis dolorem, doloremque blanditiis fuga
+                  labore culpa id ipsam vero.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <p class="section3-greeting" style="font-weight: bold">
+            Вкусно и полезно для продуктивного дня!!!
+          </p>
+          <p class="section3-price" style="font-style: italic">
+            * цена бизнес-ланча - 180 грн.
+          </p>
+        </div>
+      </section>
+      <div class="after-section-line"></div>
+      <section class="section4" id="section4">
+        <!-- сделать border radius -->
+        <div class="container">
+          <h2 class="section4-header">На заказ</h2>
+          <div class="section4-infos">
+            <p class="section4-infos-item">У НАС ЕСТЬ СОБСТВЕННАЯ ДОСТАВКА!</p>
+            <p class="section4-infos-item">
+              ЗАКАЗ И ДОСТАВКУ МОЖНО ОФОРМИТЬ ПО НОМЕРУ
+              <a class="section4-tel" href="tel:0674070494">067 407 04 94</a>
+            </p>
+          </div>
+          <h3 class="section4-wedo">А ЕЩЕ, МЫ САМИ ДЕЛАЕМ:</h3>
+        </div>
+        <div class="container-lists">
+          <div class="section4-bread">
+            <div class="section4-breadinfo">
+              <h4 class="section4-breadheader">Хлеб</h4>
+              <p class="section4-breaddes">
+                У НАС ПРОДАЕТСЯ БЕЗДРОЖЖЕВОЙ ХЛЕБ, КОТОРЫЙ ГОТОВИТСЯ НА
+                СОЛОДОВОЙ ЗАКВАСКЕ. ЕСЛИ ОН ПРИШЕЛСЯ ВАМ ПО ВКУСУ – МОЖНО
+                ПРИОБРЕСТИ БУХАНКУ НА ВЫНОС. РЕКОМЕНДУЕМЫЙ ВЕС ХЛЕБА – 1 КГ.
+                ЗАКАЗ ПРИНИМАЕТСЯ ЗА СУТКИ.
+              </p>
+            </div>
+            <ul class="section4-breadlist">
+              <li class="section4-breadlist-item">
+                <h5 class="section4-breadlist-item-name">Хлеб бездрожжевой</h5>
+                <img
+                  src="assets/img/section4/bread.png"
+                  alt=""
+                  class="section4-breadlist-item-img"
+                />
+                <div class="section4-breadlist-item-info">
+                  <p class="section4-breadlist-item-info-weight">1 кг</p>
+                  <p class="section4-breadlist-item-info-price">120 грн</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="section4-candy">
+            <h4 class="section4-candy-header">АЮРВЕДИЧЕСКИЕ КОНФЕТЫ</h4>
+            <h5 class="section4-candy-info">НА ВЫНОС*:</h5>
+            <ul class="section4-candy-list">
+              <li class="section4-candy-list-item">
+                <h5 class="section4-candy-list-item-name">Трюфель-орех</h5>
+                <img
+                  src="assets/img/section4/candies/candy1.png"
+                  alt=""
+                  class="section4-candy-list-item-img"
+                />
+                <div class="section4-candy-list-item-info">
+                  <p class="section4-candy-list-item-info-quantity">1 шт.</p>
+                  <p class="section4-candy-list-item-info-price">40 грн</p>
+                </div>
+              </li>
+              <li class="section4-candy-list-item">
+                <h5 class="section4-candy-list-item-name">
+                  Кэробовый батончик с фундуком
+                </h5>
+                <img
+                  src="assets/img/section4/candies/candy2.png"
+                  alt=""
+                  class="section4-candy-list-item-img"
+                />
+                <div class="section4-candy-list-item-info">
+                  <p class="section4-candy-list-item-info-quantity">1 шт.</p>
+                  <p class="section4-candy-list-item-info-price">40 грн</p>
+                </div>
+              </li>
+              <li class="section4-candy-list-item">
+                <h5 class="section4-candy-list-item-name">Кунжут-кокос</h5>
+                <img
+                  src="assets/img/section4/candies/candy3.png"
+                  alt=""
+                  class="section4-candy-list-item-img"
+                />
+                <div class="section4-candy-list-item-info">
+                  <p class="section4-candy-list-item-info-quantity">1 шт.</p>
+                  <p class="section4-candy-list-item-info-price">40 грн</p>
+                </div>
+              </li>
+              <li class="section4-candy-list-item">
+                <h5 class="section4-candy-list-item-name">Имбирь-сухофрукты</h5>
+                <img
+                  src="assets/img/section4/candies/candy4.png"
+                  alt=""
+                  class="section4-candy-list-item-img"
+                />
+                <div class="section4-candy-list-item-info">
+                  <p class="section4-candy-list-item-info-quantity">1 шт.</p>
+                  <p class="section4-candy-list-item-info-price">40 грн</p>
+                </div>
+              </li>
+              <li class="section4-candy-list-item">
+                <h5 class="section4-candy-list-item-name">
+                  Сливочный марципан
+                </h5>
+                <img
+                  src="assets/img/section4/candies/candy5.png"
+                  alt=""
+                  class="section4-candy-list-item-img"
+                />
+                <div class="section4-candy-list-item-info">
+                  <p class="section4-candy-list-item-info-quantity">1 шт.</p>
+                  <p class="section4-candy-list-item-info-price">40 грн</p>
+                </div>
+              </li>
+              <li class="section4-candy-list-item">
+                <h5 class="section4-candy-list-item-name">
+                  Солено-острая с миндалем и кэробом
+                </h5>
+                <img
+                  src="assets/img/section4/candies/candy6.png"
+                  alt=""
+                  class="section4-candy-list-item-img"
+                />
+                <div class="section4-candy-list-item-info">
+                  <p class="section4-candy-list-item-info-quantity">1 шт.</p>
+                  <p class="section4-candy-list-item-info-price">40 грн</p>
+                </div>
+              </li>
+              <li class="section4-candy-list-item">
+                <h5 class="section4-candy-list-item-name">Кокос в шоколаде</h5>
+                <img
+                  src="assets/img/section4/candies/candy7.png"
+                  alt=""
+                  class="section4-candy-list-item-img"
+                />
+                <div class="section4-candy-list-item-info">
+                  <p class="section4-candy-list-item-info-quantity">1 шт.</p>
+                  <p class="section4-candy-list-item-info-price">40 грн</p>
+                </div>
+              </li>
+              <li class="section4-candy-list-item">
+                <h5 class="section4-candy-list-item-name">
+                  Шоколадный финик-фундук
+                </h5>
+                <img
+                  src="assets/img/section4/candies/candy8.png"
+                  alt=""
+                  class="section4-candy-list-item-img"
+                />
+                <div class="section4-candy-list-item-info">
+                  <p class="section4-candy-list-item-info-quantity">1 шт.</p>
+                  <p class="section4-candy-list-item-info-price">40 грн</p>
+                </div>
+              </li>
+              <li class="section4-candy-list-item">
+                <h5 class="section4-candy-list-item-name">Шоколадный тоффи</h5>
+                <img
+                  src="assets/img/section4/candies/candy9.png"
+                  alt=""
+                  class="section4-candy-list-item-img"
+                />
+                <div class="section4-candy-list-item-info">
+                  <p class="section4-candy-list-item-info-quantity">1 шт.</p>
+                  <p class="section4-candy-list-item-info-price">40 грн</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="section4-cakes">
+            <h4 class="section4-cakes-header">Торты</h4>
+            <ul class="section4-cakes-list">
+              <li class="section4-cakes-list-item">
+                <h5 class="section4-cakes-list-item-header">
+                  Мятный кешью-тарт
+                </h5>
+                <img
+                  src="assets/img/section4/cakes/cake1.png"
+                  alt=""
+                  class="section4-cakes-list-item-img"
+                />
+                <ul class="section4-cakes-list-item-addons">
+                  <li
+                    class="section4-cakes-list-item-addons-item"
+                    style="font-style: italic"
+                  >
+                    *десерт без сахара
+                  </li>
+                  <li
+                    class="section4-cakes-list-item-addons-item"
+                    style="font-style: italic"
+                  >
+                    *десерт без глютена
+                  </li>
+                </ul>
+                <p class="section4-cakes-list-item-additional">
+                  <b>Песочные коржи:</b> пшеничная мука, растительное масло,
+                  сметана. <br />
+                  <b>Заварной крем:</b> молоко, пшеничная мука, сахар, ванильный
+                  сахар, сливочное масло, кэроб, сгущенное молоко. Вишня между
+                  коржами оттеняет сладость.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="after-section-line"></div>
+      <section class="main-section5" id="section5">
+        <h2 class="main-section5-header">Пространство</h2>
+        <div class="carousel-container">
+          <div class="carousel">
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/section5/1.jpg"
+                alt=""
+                onclick="sec5OpenCarouselImage(1)"
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/section5/2.jpg"
+                alt=""
+                onclick="sec5OpenCarouselImage(2)"
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/section5/3.jpg"
+                alt=""
+                onclick="sec5OpenCarouselImage(3)"
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/section5/4.jpg"
+                alt=""
+                onclick="sec5OpenCarouselImage(4)"
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/section5/5.jpg"
+                alt=""
+                onclick="sec5OpenCarouselImage(5)"
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/section5/6.jpg"
+                alt=""
+                onclick="sec5OpenCarouselImage(6)"
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/section5/7.jpg"
+                alt=""
+                onclick="sec5OpenCarouselImage(7)"
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/section5/8.jpg"
+                alt=""
+                onclick="sec5OpenCarouselImage(8)"
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/section5/9.jpg"
+                alt=""
+                onclick="sec5OpenCarouselImage(9)"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <script src="assets/js/section 5 carousel.js"></script>
+      <div class="after-section-line"></div>
+      <section class="main-section8" id="section8">
+        <div class="container">
+          <div class="wrapper">
+            <h2 class="main-section8-header">Банановые сырники</h2>
+            <div class="main-section8-slider">
+              <div class="main-section8-slider-canvas">
+                <img
+                  class="main-section8-slider-canvas-img"
+                  src="assets/img/section8/slider0.jpg"
+                  alt=""
+                />
+                <img
+                  src="assets/img/section8/slider1.jpg"
+                  alt=""
+                  class="main-section8-slider-canvas-img"
+                />
+                <img
+                  src="assets/img/section8/slider2.jpg"
+                  alt=""
+                  class="main-section8-slider-canvas-img"
+                />
+              </div>
+              <ul class="main-section8-slider-balls">
+                <li class="main-section8-slider-balls-item"></li>
+                <li class="main-section8-slider-balls-item"></li>
+                <li class="main-section8-slider-balls-item"></li>
+              </ul>
+              <div class="main-section8-slider-arrows">
+                <img
+                  src="assets/img/section8/arrow.svg"
+                  alt="Arrow"
+                  class="main-section8-slider-arrows-left"
+                  id="left"
+                />
+                <img
+                  src="assets/img/section8/arrow.svg"
+                  alt="Arrow"
+                  class="main-section8-slider-arrows-right"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="assets/js/slider.js"></script>
+      </section>
+      <div class="after-section-line"></div>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="container footer-container">
+        <div class="footer-title">
+          <img
+            src="assets/img/footer/icon.svg"
+            alt="Coffee cup"
+            class="footer-title-icon"
+          />
+          <h3 class="footer-title-header">Литературное кафе «Имбирь»</h3>
+        </div>
+        <ul class="footer-links">
+          <li class="footer-links-row1">
+            <div class="footer-links-item">
+              <a
+                href="https://goo.gl/maps/jCEweLfQxBSeN2ei7"
+                class="footer-links-item-link"
+                >ул. Жилянская, 7</a
+              >
+            </div>
+            <div class="footer-links-item">
+              <a href="" class="footer-links-item-link">Пн-Вс: 8:00-22:00</a>
+            </div>
+          </li>
+          <li class="footer-links-row2">
+            <div class="footer-links-item phone">
+              <a href="tel:+380442876180" class="footer-links-item-link"
+                >+38 (044) 287-61-80</a
+              >
+              <p class="comma">,</p>
+              <a href="tel:+380674070494" class="footer-links-item-link"
+                >+38 (067) 407-04-94</a
+              >
+            </div>
+            <div class="footer-links-item">
+              <a href="mailto:info@cafeimbir.com" class="footer-links-item-link"
+                >info@cafeimbir.com</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- <div class="tree">
+      <img src="assets/img/Vector 603 (1).svg" alt="" class="tree-img">
+      <img src="assets/img/path2225.svg" alt="" class="leaf leaf1">
+      <div class="leaf2-container">
+         <img src="assets/img/path2225 (1).svg" alt="leaf" class="leaf leaf2">
+         <p class="leaf2-text">Контакты</p>
+      </div>
+   </div>
+   <script src="assets/js/tree.js"></script> -->
+    <script src="assets/js/dark theme.js"></script>
+  </body>
+</html>

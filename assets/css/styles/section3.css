@@ -1,0 +1,109 @@
+.section3 {
+  position: relative;
+  padding-top: calc(10 * var(--desktopProportions));
+  padding-bottom: calc(30 * var(--desktopProportions));
+  background-color: #ecd6b381;
+  background-image: url(/assets/img/section3/background.jpg);
+  background-blend-mode: lighten;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.section3.dark {
+  background-color: #472f14c0;
+  background-blend-mode: multiply;
+}
+
+.section3-header {
+  margin-bottom: calc(20 * var(--desktopProportions));
+  color: var(--brownOrangeDarkColor);
+}
+
+.section3-header.dark {
+  color: var(--lightBrownColor);
+}
+
+.section3-header:hover::after {
+  width: calc(275 * var(--desktopProportions));
+  background-color: var(--orangeBrownColor);
+}
+
+.section3-time,
+.section3-date,
+.section3-dishes-item,
+.section3-extra,
+.section3-price,
+.section3-greeting {
+  font-family: Neucha;
+  font-size: calc(35 * var(--desktopProportions));
+  margin: 0;
+  color: var(--brownOrangeDarkColor);
+  border-radius: 30px;
+  text-align: center;
+}
+
+.section3-time.dark,
+.section3-date.dark,
+.section3-dishes-item.dark,
+.section3-extra.dark,
+.section3-price.dark,
+.section3-greeting.dark {
+  color: var(--orangeBrownColor);
+}
+
+.section3-time {
+  margin-bottom: calc(25 * var(--desktopProportions));
+}
+
+.section3-date {
+  margin-bottom: calc(20 * var(--desktopProportions));
+}
+
+.section3-dishes-item,
+.section3-extra {
+  margin-bottom: calc(30 * var(--desktopProportions));
+}
+
+.section3-dishes-item.dark,
+.section3-extra.dark {
+  color: var(--lightOrangeBrownColor);
+}
+
+.section3-dishinfo {
+  display: flex;
+  align-items: center;
+  margin-left: calc(100 * var(--desktopProportions));
+}
+
+.section3-dishdes {
+  width: calc(350 * var(--desktopProportions));
+  margin-left: calc(25 * var(--desktopProportions));
+  font-family: Pacifico;
+  font-size: calc(28 * var(--desktopProportions));
+  color: var(--brownOrangeDarkDarkColor);
+}
+
+.section3-dishdes.dark {
+  color: var(--orangeBrownColor);
+}
+
+.section3-dishimg {
+  position: relative;
+  width: calc(400 * var(--desktopProportions));
+}
+
+.section3-dishimg:hover::after {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #72512b80;
+  z-index: 99;
+  content: "";
+}
+
+.section3-greeting {
+  margin-top: calc(20 * var(--desktopProportions));
+  margin-bottom: calc(15 * var(--desktopProportions));
+}

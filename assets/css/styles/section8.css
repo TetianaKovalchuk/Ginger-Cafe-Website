@@ -1,0 +1,150 @@
+.main-section8 {
+  background-image: url(/assets/img/section8/background.jpg);
+  background-color: var(--sectionBackgroundColorLight);
+  background-blend-mode: lighten;
+  background-position: center;
+  background-size: calc(2700 * var(--desktopProportions));
+  background-repeat: no-repeat;
+  padding-top: calc(130 * var(--desktopProportions));
+  padding-bottom: calc(90 * var(--desktopProportions));
+  position: relative;
+}
+
+.main-section8.dark {
+  background-color: var(--sectionBackgroundColorDark);
+  background-blend-mode: darken;
+}
+
+.main-section8-slider {
+  max-width: calc(1200 * var(--desktopProportions));
+  position: relative;
+  border: 1px solid var(--orangeBrownColor);
+  box-shadow: 0px 0px calc(30 * var(--desktopProportions)) 0px
+    var(--orangeBrownColor);
+  overflow: hidden;
+}
+
+.main-section8-slider.dark {
+  border: 1px solid var(--brownOrangeDarkColor);
+}
+
+.wrapper {
+  width: calc(1200 * var(--desktopProportions));
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.main-section8-header {
+  background-color: rgba(0, 0, 0, 0.333);
+  color: var(--lightBrownColor);
+  position: absolute;
+  width: calc(1189 * var(--desktopProportions));
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  text-align: center;
+  padding-bottom: calc(50 * var(--desktopProportions));
+  transition: 500ms font-size, 500ms transform ease-out;
+  font-size: calc(48 * var(--desktopProportions));
+  padding: calc(10 * var(--desktopProportions))
+    calc(5 * var(--desktopProportions)) calc(50 * var(--desktopProportions))
+    calc(5 * var(--desktopProportions));
+}
+
+.main-section8-header.dark {
+  color: var(--superLightOrangeBrownColor);
+  background-color: rgba(0, 0, 0, 0.356);
+}
+/* 
+.main-section3-header-transition {
+  transition: 500ms font-size ease-in;
+  font-size: calc(51 / 1920 * 140vw);
+} */
+
+.main-section8-header-hover {
+  transition: transform 500ms ease;
+  transform: translateY(calc(-85 * var(--desktopProportions)));
+}
+
+.main-section8-slider-canvas {
+  display: flex;
+  max-width: calc(1200 * var(--desktopProportions));
+}
+.main-section8-slider-canvas-img {
+  width: calc(1200 * var(--desktopProportions));
+  height: calc(674.4 * var(--desktopProportions));
+}
+
+.main-section8-slider-arrows {
+  position: absolute;
+  top: 0;
+  margin-top: calc((674.4 - 80) / 2 * var(--desktopProportions));
+  z-index: 99;
+  margin-left: calc(10 * var(--desktopProportions));
+  width: calc(1180 * var(--desktopProportions));
+  height: calc(80 * var(--desktopProportions));
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.main-section8-slider-arrows-left,
+.main-section8-slider-arrows-right {
+  width: calc(80 * var(--desktopProportions));
+  height: calc(80 * var(--desktopProportions));
+  /* transform: translateY(calc(-281px + 60px / 2)); */
+  cursor: pointer;
+}
+
+.main-section8-slider-arrows-left {
+  transform: rotate(180deg);
+  left: 0;
+}
+
+.main-section8-slider-arrows-right {
+  /* margin-left: calc(
+    (1200 - (calc(80 / 1920 * 100vw) * 2) - (calc(10 / 1920 * 100vw) * 2)) /
+      1920 * 100vw
+  ); */
+  /* margin-left: calc(1200 - ((80 - 10) / 1920 * 100vw * 2)); */
+  /* margin-right: calc(10 / 1920 * 100vw); */
+  float: right;
+}
+
+.main-section8-slider-balls {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  bottom: calc(10 * var(--desktopProportions));
+  left: calc(50% - (70px / 2));
+}
+
+.main-section8-slider-balls-item {
+  content: "";
+  background-color: var(--lightBrownColor);
+  border-radius: 50%;
+  box-shadow: 0px 0px calc(11 / 1920 * 100vw) rgba(0, 0, 0, 0.5);
+  width: calc(20 * var(--desktopProportions));
+  height: calc(20 * var(--desktopProportions));
+  transition: background-color 500ms ease;
+}
+
+.main-section8-slider-balls-item.dark {
+  background-color: var(--lightOrangeBrownColor);
+}
+
+.main-section8-slider-balls-item:not(:last-child) {
+  margin-right: calc(5 * var(--desktopProportions));
+}
+
+.active-ball {
+  background-color: var(--orangeBrownColor);
+  transition: background-color 500ms ease;
+}
+
+.active-ball.dark {
+  background-color: var(--orangeDarkColor);
+}

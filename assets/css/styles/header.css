@@ -1,0 +1,184 @@
+header {
+  display: flex;
+  height: calc(44 * var(--desktopProportions));
+  padding-top: calc(26 * var(--desktopProportions));
+  padding-bottom: calc(30 * var(--desktopProportions));
+  align-items: center;
+  position: absolute;
+  line-height: calc(27 * var(--desktopProportions));
+  background-color: var(--headerBackgroundColor);
+  background-image: url(/assets/img/header/background-texture.png);
+  width: 100%;
+  overflow: hidden;
+}
+
+header.dark {
+  background-color: var(--headerBackgroundColorDark);
+}
+
+header.logo-anim {
+  height: calc(60 * var(--desktopProportions));
+}
+
+header::after {
+  content: "";
+  background-color: var(--orangeBrownColor);
+  width: 100%;
+  height: calc(2 * var(--desktopProportions));
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.header-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.header-logo {
+  width: calc(110 * var(--desktopProportions));
+  height: calc(110 * var(--desktopProportions));
+  position: absolute;
+  left: calc(135 * var(--desktopProportions));
+  top: calc(-33 * var(--desktopProportions));
+}
+
+.header-logo:hover {
+  width: calc(140 * var(--desktopProportions));
+  height: calc(140 * var(--desktopProportions));
+  position: absolute;
+  left: calc(120 * var(--desktopProportions));
+  top: calc(-39 * var(--desktopProportions));
+}
+
+.header-nav {
+  align-items: center;
+  margin: auto;
+  width: fit-content;
+}
+
+.header-nav-home {
+  margin-right: calc(24 * var(--desktopProportions));
+}
+
+.header-nav-pages {
+  transition: height 250ms, border-color 250ms ease-out;
+  border-left: calc(1 * var(--desktopProportions)) solid #725b40;
+  padding-left: calc(32 * var(--desktopProportions));
+  height: calc(50 * var(--desktopProportions));
+  align-items: center;
+}
+
+.header-nav-pages:hover {
+  transition: height 250ms, border-color 250ms ease-in;
+  border-color: var(--orangeBrownColor);
+  height: calc(65 * var(--desktopProportions));
+}
+
+.header-nav,
+.header-nav-pages {
+  display: flex;
+}
+
+.header-nav-pages-item-link {
+  font-family: Jura;
+  font-size: calc(22 * var(--desktopProportions));
+  font-style: normal;
+  font-weight: 400;
+  line-height: calc(29 * var(--desktopProportions));
+  letter-spacing: 0em;
+  color: black;
+  transition: color 500ms ease-out;
+  cursor: pointer;
+  position: relative;
+}
+
+.header-nav-pages-item-link.dark {
+  color: var(--orangeBrownColor);
+}
+
+.header-nav-pages-item-link.dark:hover {
+  color: var(--lightBrownColor);
+}
+
+.header-nav-pages-item-link:hover {
+  transition: color 250ms ease;
+  color: var(--lightBrownColor);
+}
+
+.header-nav-pages-item-link::after {
+  content: "";
+  background-color: var(--orangeBrownColor);
+  height: calc(1.5 * var(--desktopProportions));
+  display: block;
+  position: absolute;
+  margin: auto;
+  margin-top: calc(7 * var(--desktopProportions));
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+  transition: width 350ms ease-out;
+  width: 0;
+}
+
+.header-nav-pages-item-link:hover::after {
+  opacity: 1;
+  width: 100%;
+  transition: width 350ms ease-in;
+}
+
+.header-nav-pages-item:not(:last-child) {
+  margin-right: calc(30 * var(--desktopProportions));
+}
+
+.header-search {
+  position: absolute;
+  right: calc(170 * var(--desktopProportions));
+  top: calc(11 * var(--desktopProportions));
+}
+
+.header-search:hover {
+  box-shadow: 0px 0px 7px 0px #0000008a;
+}
+
+.header-nav-home,
+.header-search {
+  width: calc(28 * var(--desktopProportions));
+  height: calc(28 * var(--desktopProportions));
+  cursor: pointer;
+}
+
+.header-field {
+  position: absolute;
+  font-size: calc(22 * var(--desktopProportions));
+  background: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  padding: calc(14 * var(--desktopProportions))
+    calc(70 * var(--desktopProportions)) calc(11 * var(--desktopProportions))
+    calc(14 * var(--desktopProportions));
+  top: calc(86 * var(--desktopProportions));
+  right: calc(64 * var(--desktopProportions));
+  z-index: 99;
+  font-family: Neucha;
+  font-style: normal;
+  font-weight: normal;
+  opacity: 0;
+  cursor: default;
+  transition: opacity 250ms ease;
+}
+
+.header-field.dark {
+  background: var(--lightOrangeBrownColor);
+  border-color: var(--brownOrangeDarkColor);
+}
+
+.header-field-active {
+  transition: opacity 250ms ease;
+  opacity: 1;
+  cursor: text;
+}

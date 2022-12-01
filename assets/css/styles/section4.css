@@ -1,0 +1,317 @@
+.section4 {
+  background-color: var(--superLightOrangeBrownColor);
+  background-image: url(/assets/img/section4/background-texture.png);
+  padding-bottom: calc(80 * var(--desktopProportions));
+  padding-top: calc(15 * var(--desktopProportions));
+}
+
+.section4.dark {
+  background-color: var(--brownDarkColor);
+}
+
+.section4-header {
+  margin-bottom: calc(10 * var(--desktopProportions));
+}
+
+.section4-header::after {
+  margin-top: calc(1 * var(--desktopProportions));
+}
+
+.section4-header.dark::after {
+  background-color: var(--lightOrangeBrownColor);
+}
+
+.section4-infos-item {
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  color: var(--brownOrangeDarkDarkColor);
+  font-size: calc(22 * var(--desktopProportions));
+}
+
+.section4-infos-item.dark {
+  color: var(--orangeBrownColor);
+}
+
+.section4-tel {
+  font-family: Pacifico;
+  color: var(--brownOrangeDarkDarkColor);
+}
+
+.section4-tel.dark {
+  color: var(--lightOrangeBrownColor);
+}
+
+.section4-wedo {
+  font-size: calc(28 * var(--desktopProportions));
+  margin-top: calc(10 * var(--desktopProportions));
+  margin-bottom: calc(5 * var(--desktopProportions));
+}
+
+.section4-wedo::after {
+  margin-top: 0;
+  display: none;
+}
+
+.section4-wedo.dark {
+  color: var(--lightOrangeBrownColor);
+}
+
+.container-lists {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(1330 * var(--desktopProportions));
+}
+
+.section4-bread {
+  margin-bottom: calc(30 * var(--desktopProportions));
+}
+
+.section4-breadheader,
+.section4-candy-header,
+.section4-cakes-header {
+  text-transform: uppercase;
+}
+
+.section4-breadheader {
+  font-size: calc(38 * var(--desktopProportions));
+}
+
+.section4-breadheader::after {
+  margin-top: calc(2 * var(--desktopProportions));
+}
+
+.section4-breadheader.dark::after {
+  background-color: var(--lightOrangeBrownColor);
+}
+
+.section4-breadinfo {
+  align-items: center;
+  margin-bottom: calc(40 * var(--desktopProportions));
+}
+
+.section4-breaddes {
+  color: var(--brownOrangeDarkDarkColor);
+  font-size: calc(22 * var(--desktopProportions));
+  max-width: calc(600 * var(--desktopProportions));
+  text-align: center;
+  margin: auto;
+  margin-top: calc(10 * var(--desktopProportions));
+}
+
+.section4-breaddes.dark {
+  color: var(--orangeBrownColor);
+}
+
+.section4-breadlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section4-breadlist-item {
+  max-width: calc(300 * var(--desktopProportions));
+}
+
+.section4-breadlist-item-name {
+  font-size: calc(29 * var(--desktopProportions));
+  text-align: left;
+  margin-bottom: calc(15 * var(--desktopProportions));
+}
+
+.section4-breadlist-item-name::after {
+  margin-left: 0;
+  margin-right: 0;
+  left: 0;
+  margin-top: 0;
+}
+
+.section4-breadlist-item-name.dark::after {
+  background-color: var(--lightOrangeBrownColor);
+}
+
+.section4-breadlist-item-name:hover::after {
+  width: calc(200 * var(--desktopProportions));
+}
+
+.section4-breadlist-item-img {
+  width: calc(300 * var(--desktopProportions));
+  margin-bottom: calc(10 * var(--desktopProportions));
+}
+
+.section4-breadlist-item-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section4-breadlist-item-info-weight {
+  font-size: calc(25 * var(--desktopProportions));
+}
+
+.section4-breadlist-item-info-weight.dark {
+  color: var(--superLightOrangeBrownColor);
+}
+
+.section4-breadlist-item-info-price {
+  font-size: calc(25 * var(--desktopProportions));
+}
+
+.section4-breadlist-item-info-price.dark {
+  color: var(--superLightOrangeBrownColor);
+}
+
+.section4-candy {
+  margin-bottom: calc(30 * var(--desktopProportions));
+}
+
+.section4-candy-header.dark::after {
+  background-color: var(--lightOrangeBrownColor);
+}
+
+.section4-candy-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section4-candy-info {
+  font-size: calc(32 * var(--desktopProportions));
+  color: var(--brownOrangeDarkDarkColor);
+}
+
+.section4-candy-info.dark {
+  color: var(--lightOrangeBrownColor);
+}
+
+.section4-candy-info::after {
+  margin-top: 0;
+}
+
+.section4-candy-info.dark::after {
+  background-color: var(--orangeBrownColor);
+}
+
+.section4-candy-info:hover::after {
+  width: calc(400 * var(--desktopProportions));
+}
+
+.section4-candy-list-item {
+  max-width: calc(500 * var(--desktopProportions));
+}
+
+.section4-candy-list-item-name {
+  font-size: calc(26 * var(--desktopProportions));
+  text-align: left;
+  margin-bottom: calc(15 * var(--desktopProportions));
+}
+
+.section4-candy-list-item-name::after {
+  margin-left: 0;
+  margin-right: 0;
+  left: 0;
+  margin-top: 0;
+}
+
+.section4-candy-list-item-name.dark::after {
+  background-color: var(--lightOrangeBrownColor);
+}
+
+.section4-candy-list-item-name:hover::after {
+  width: calc(200 * var(--desktopProportions));
+}
+
+.section4-candy-list-item-img {
+  width: calc(300 * var(--desktopProportions));
+  margin: auto;
+}
+
+.section4-candy-list-item-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section4-candy-list-item-info-quantity {
+  font-size: calc(25 * var(--desktopProportions));
+}
+
+.section4-candy-list-item-info-quantity.dark {
+  color: var(--lightOrangeBrownColor);
+}
+
+.section4-candy-list-item-info-price {
+  font-size: calc(25 * var(--desktopProportions));
+}
+
+.section4-candy-list-item-info-price.dark {
+  color: var(--orangeBrownColor);
+}
+
+.section4-cakes {
+  margin-bottom: calc(30 * var(--desktopProportions));
+}
+
+.section4-cakes-header.dark::after {
+  background-color: var(--orangeBrownColor);
+}
+
+.section4-cakes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section4-cakes-list-item {
+  max-width: calc(350 * var(--desktopProportions));
+}
+
+.section4-cakes-list-item-header {
+  font-size: calc(29 * var(--desktopProportions));
+  text-align: left;
+  margin-bottom: calc(15 * var(--desktopProportions));
+}
+
+.section4-cakes-list-item-header::after {
+  margin-left: 0;
+  margin-right: 0;
+  left: 0;
+  margin-top: 0;
+}
+
+.section4-cakes-list-item-header.dark::after {
+  background-color: var(--lightOrangeBrownColor);
+}
+
+.section4-cakes-list-item-header.dark:hover::after {
+  width: calc(300 * var(--desktopProportions));
+}
+
+.section4-cakes-list-item-img {
+  max-width: 100%;
+}
+
+.section4-cakes-list-item-addons {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-left: 35%;
+  margin-top: calc(15 * var(--desktopProportions));
+  margin-bottom: calc(10 * var(--desktopProportions));
+}
+
+.section4-cakes-list-item-addons-item {
+  font-size: calc(22 * var(--desktopProportions));
+}
+
+.section4-cakes-list-item-addons-item.dark {
+  color: var(--lightOrangeBrownColor);
+}
+
+.section4-cakes-list-item-additional {
+  width: inherit;
+  font-size: calc(23 * var(--desktopProportions));
+}
+
+.section4-cakes-list-item-additional.dark {
+  color: var(--lightOrangeBrownColor);
+}
