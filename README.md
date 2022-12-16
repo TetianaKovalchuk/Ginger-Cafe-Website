@@ -1,5 +1,5 @@
 # Ginger-Cafe-Website
-A website i did a long time ago for a real cafe. The code quality may be not as good as my new projects. GitHub Pages link: https://tetianakovalchuk.github.io/Ginger-Cafe-Website/
+A website i did a long time ago for a real cafe. The code quality may be not as good as my new projects.
 
 GitHub Pages link: https://tetianakovalchuk.github.io/Ginger-Cafe-Website/
 
