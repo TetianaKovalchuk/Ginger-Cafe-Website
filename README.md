@@ -1,5 +1,6 @@
 # Ginger-Cafe-Website
 A website i did a long time ago for a real cafe. The code quality may be not as good as my new projects.
+Especially proud of the 3D slider on section 5 and a normal slideshow slider on section 6.
 
 GitHub Pages link: https://tetianakovalchuk.github.io/Ginger-Cafe-Website/
 
